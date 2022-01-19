@@ -17,7 +17,7 @@ st.markdown(
     """
     <style>
     .reportview-container {
-        background: url("https://github.com/PaulaCervilla/Electricity-prices-predictions-in-Spain---Data-Science-TFM/blob/main/front%20end%20streamlit/electricity.jpg?raw=true");
+        background: url("https://raw.githubusercontent.com/PaulaCervilla/Electricity-prices-predictions-in-Spain---Data-Science-TFM/main/front%20end%20streamlit/electricity2.jpg");
 	background-size: cover
     }
 

@@ -126,19 +126,31 @@ years["diff_total€/MWh"] = years["Total €/MWh"].diff()
 years["diff_total€/MWh%"] = years["Total €/MWh"].diff()/years["Total €/MWh"]*100
 
 col1, col2, col3 = st.columns(3)
-col1.metric("Max. Total €/MWh 2013 (May-Dec)", "103.2 €", delta_color="inverse")
-col2.metric("Max. Total €/MWh 2014", "81.6 €", "-26.5%", delta_color="inverse")
-col3.metric("Max. Total €/MWh 2015", "79.8 €", "-2.2%", delta_color="inverse")
+
+with col1:
+	st.metric("Max. Total €/MWh 2013 (May-Dec)", "103.2 €", delta_color="inverse")
+with col2:
+	st.metric("Max. Total €/MWh 2014", "81.6 €", "-26.5%", delta_color="inverse")
+with col3:
+	st.metric("Max. Total €/MWh 2015", "79.8 €", "-2.2%", delta_color="inverse")
 
 col4, col5, col6 = st.columns(3)
-col4.metric("Max. Total €/MWh 2016", "74.4 €", "-7.3%", delta_color="inverse")
-col5.metric("Max. Total €/MWh 2017", "99.4 €", "25.2%", delta_color="inverse")
-col6.metric("Max. Total €/MWh 2018", "81.2 €", "-22.4%", delta_color="inverse")
+
+with col4:
+	st.metric("Max. Total €/MWh 2016", "74.4 €", "-7.3%", delta_color="inverse")
+with col5:
+	st.metric("Max. Total €/MWh 2017", "99.4 €", "25.2%", delta_color="inverse")
+with col6:
+	st.metric("Max. Total €/MWh 2018", "81.2 €", "-22.4%", delta_color="inverse")
 
 col7, col8, col9 = st.columns(3)
-col7.metric("Max. Total €/MWh 2019", "74.4 €", "-9.12%", delta_color="inverse")
-col8.metric("Max. Total €/MWh 2020", "62.7 €", "-18.7%", delta_color="inverse")
-col9.metric("Max. Total €/MWh 2021 (Jan-Sep)", "196.18 €", "68.0%", delta_color="inverse")
+
+with col7:
+	st.metric("Max. Total €/MWh 2019", "74.4 €", "-9.12%", delta_color="inverse")
+with col8:
+	st.metric("Max. Total €/MWh 2020", "62.7 €", "-18.7%", delta_color="inverse")
+with col9:
+	st.metric("Max. Total €/MWh 2021 (Jan-Sep)", "196.18 €", "68.0%", delta_color="inverse")
 
 st.caption("Please note that 2013 maximum price only takes into account May to December prices. For 2021, the 196.18€ was the maximum price up to September.")
 

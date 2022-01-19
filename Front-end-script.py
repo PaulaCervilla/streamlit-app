@@ -125,7 +125,7 @@ years = models_dataset.resample("Y").max()
 years["diff_total€/MWh"] = years["Total €/MWh"].diff()
 years["diff_total€/MWh%"] = years["Total €/MWh"].diff()/years["Total €/MWh"]*100
 
-col1, col2, col3 = st.columns(3)
+col1, col2, col3 = st.columns(1, 1, 1)
 
 with col1:
 	st.metric("Max. Total €/MWh 2013 (May-Dec)", "103.2 €", delta_color="inverse")
@@ -134,7 +134,7 @@ with col2:
 with col3:
 	st.metric("Max. Total €/MWh 2015", "79.8 €", "-2.2%", delta_color="inverse")
 
-col4, col5, col6 = st.columns(3)
+col4, col5, col6 = st.columns(1, 1, 1)
 
 with col4:
 	st.metric("Max. Total €/MWh 2016", "74.4 €", "-7.3%", delta_color="inverse")
@@ -143,7 +143,7 @@ with col5:
 with col6:
 	st.metric("Max. Total €/MWh 2018", "81.2 €", "-22.4%", delta_color="inverse")
 
-col7, col8, col9 = st.columns(3)
+col7, col8, col9 = st.columns(1, 1, 1)
 
 with col7:
 	st.metric("Max. Total €/MWh 2019", "74.4 €", "-9.12%", delta_color="inverse")
